@@ -44,9 +44,7 @@ class _CalculatorScreen extends State<CalculatorScreen> {
             children: Btn.buttonValues
                 .map(
                   (e) => SizedBox(
-                      width: e == Btn.n0
-                          ? screenSize.width / 2
-                          : screenSize.width / 4,
+                      width: screenSize.width / 4,
                       height: screenSize.width / 5,
                       child: buildButton(e)),
                 )
